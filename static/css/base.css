@@ -56,6 +56,9 @@ body {
     border: 1px solid #06038D !important;
 }
 
+.bg-blue {
+    background: #06038D !important;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
