@@ -17,9 +17,9 @@
                 Ciders
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="ciders-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Sale</a>                
-                <a href="" class="dropdown-item">All Ciders</a>
+                <a href="{% url 'products' %}?category=apple" class="dropdown-item">Apple</a>
+                <a href="{% url 'products' %}?category=pear" class="dropdown-item">Pear</a>                
+                <a href="{% url 'products' %}?category=fruity" class="dropdown-item">Fruity</a>
             </div>
         </li>
 
@@ -28,7 +28,7 @@
                 Snacks
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="snacks-link">                
-                <a href="" class="dropdown-item">All Snacks</a>
+                <a href="{% url 'products' %}?category=snacks" class="dropdown-item">All Snacks</a>
             </div>
         </li>
 
@@ -37,10 +37,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
