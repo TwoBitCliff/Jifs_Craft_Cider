@@ -8,7 +8,7 @@
     "name": "Addlestones Cloudy",
     "product_id": "10001",
     "brand": "Addlestones",
-    "category": "1",
+    "category": "5",
     "quantity": "500",
     "rating": "2.5",
     "price": "4.99"
@@ -188,10 +188,10 @@
     "name": "Maeloc Dry Apple Cider",
     "product_id": "10013",
     "brand": "Maeloc",
-    "category": "1",
+    "category": "7",
     "quantity": "330",
     "rating": "1.5",
-    "price": "3.99"
+    "price": "2.5"
     
   }},
   {
@@ -278,10 +278,10 @@
     "name": "Orchard Pig Truffler",
     "product_id": "10019",
     "brand": "Orchard Pig",
-    "category": "1",
+    "category": "7",
     "quantity": "500",
     "rating": "3",
-    "price": "4.99"
+    "price": "2.5"
     
   }},
   {
@@ -383,10 +383,10 @@
     "name": "Savanna Dry Cider",
     "product_id": "10026",
     "brand": "Savanna",
-    "category": "1",
+    "category": "6",
     "quantity": "330",
     "rating": "1.7",
-    "price": "3.99"
+    "price": "1.99"
     
   }},
   {
@@ -443,10 +443,10 @@
     "name": "Stowford Press",
     "product_id": "10030",
     "brand": "Stowford Press",
-    "category": "1",
+    "category": "6",
     "quantity": "500",
     "rating": "2.3",
-    "price": "4.99"
+    "price": "1.99"
     
   }},
   {
@@ -458,7 +458,7 @@
     "name": "Thatchers Haze",
     "product_id": "10031",
     "brand": "Thatchers",
-    "category": "1",
+    "category": "5",
     "quantity": "500",
     "rating": "2.3",
     "price": "4.99"
@@ -563,10 +563,10 @@
     "name": "Waddlegoose Cyder",
     "product_id": "10038",
     "brand": "Waddlegoose",
-    "category": "1",
+    "category": "6",
     "quantity": "500",
     "rating": "2.3",
-    "price": "4.99"
+    "price": "1.99"
     
   }},
   {
