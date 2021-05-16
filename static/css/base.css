@@ -28,18 +28,18 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: blue;
     color: white;
     min-width: 260px;
 }
 
-.btn-black {
-    background: black;
+.btn-blue {
+    background: blue;
     color: white;
 }
 
 .btn-blue {
-    background: black;
+    background: blue;
     color: white;
 }
 
@@ -49,9 +49,9 @@ body {
     border: 1px solid blue;
 }
 
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
+.btn-outline-blue:hover,
+.btn-outline-blue:active,
+.btn-outline-blue:focus {
     background: blue;
     color: white !important;
 }
@@ -59,9 +59,9 @@ body {
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+.btn-blue:hover,
+.btn-blue:active,
+.btn-blue:focus {
     background: #222;
     color: white;
 }
