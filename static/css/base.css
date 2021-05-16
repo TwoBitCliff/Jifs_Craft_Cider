@@ -38,6 +38,24 @@ body {
     color: white;
 }
 
+.btn-blue {
+    background: black;
+    color: white;
+}
+
+.btn-outline-blue {
+    background: white;
+    color: blue !important; 
+    border: 1px solid blue;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: blue;
+    color: white !important;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
