@@ -2,41 +2,174 @@
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <hr>
-                <h2 class="logo-font mb-4">Thank you for your order</h2>
-                <hr>
-                <p class="text-blue">Order confirmation sent to <em>{{ order.email }}</em>.</p>
-            </div>
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
+            <hr>
+            <h2 class="logo-font mb-4">Thank you for your order</h2>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Delivery Details</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Order Number
+                        </td>
+                        <td class="text-right">
+                            {{ order.order_number }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Full Name
+                        </td>
+                        <td class="text-right">
+                            {{ order.full_name }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Address 1
+                        </td>
+                        <td class="text-right">
+                            {{ order.street_address1 }}
+                        </td>
+                    </tr>
+                    {% if order.street_address2 %}
+                    <td>
+                        Address 2
+                    </td>
+                    <td class="text-right">
+                        {{ order.street_address2 }}
+                    </td>
+                    {% endif %}
+                    <tr>
+                        <td>
+                            County
+                        </td>
+                        <td class="text-right">
+                            {
+                            {{ order.county }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Order Number
+                        </td>
+                        <td class="text-right">
+                            {{ order.order_number }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Town or City
+                        </td>
+                        <td class="text-right">
+                            {{ order.town_or_city }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Postal Code
+
+                        </td>
+                        <td class="text-right">
+                            {{ order.postcode }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Country
+                        </td>
+                        <td class="text-right">
+                            {{ order.country }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Phone Number
+                        </td>
+                        <td class="text-right">
+                            {{ order.phone_number }}
+                        </td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th scope="col">Total</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Order Total
+                        </td>
+                        <td class="text-right">
+                            £{{ order.order_total }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Delivery
+                        </td>
+                        <td class="text-right">
+                            £{{ order.delivery_cost }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Grand Total
+                        </td>
+                        <td class="text-right">
+                            £{{ order.grand_total }}
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col text-center">
+            <p class="text-blue">Order confirmation sent to <em>{{ order.email }}</em>.</p>
         </div>
 
-        <div class="row">
-            <div class="col-12 col-lg-7"></div>
-        </div>
-        <div class="row">
-			<div class="col-12 col-lg-7 text-right">
-				<a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="btn btn-blue rounded-0 my-2">
-					<span class="icon mr-2">
-						<i class="fas fa-gifts"></i>
-					</span>
-					<span class="text-uppercase">Why not check out our latest offers?</span>
-				</a>
-			</div>
-		</div>
     </div>
+    <div class="row">
+        <div class="col-12 col-lg-7 text-right">
+            <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="btn btn-blue rounded-0 my-2">
+                <span class="icon mr-2">
+                    <i class="fas fa-wine-bottle"></i>
+                </span>
+                <span class="text-uppercase">Why not check out our latest offers?</span>
+            </a>
+        </div>
+    </div>
+</div>
 {% endblock %}
