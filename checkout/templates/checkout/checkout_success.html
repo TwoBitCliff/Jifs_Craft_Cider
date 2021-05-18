@@ -36,10 +36,10 @@
                 <tbody>
                     {% for item in order.lineitems.all %}
                     <tr>
-                        <td>
+                        <td class="text-blue">
                             {{ item.product.name }}
                         </td>
-                        <td class="text-right">
+                        <td class="text-blue text-right">
                             <p class="small mb-0">{{ item.quantity }} x £{{ item.product.price }} each</p>
                         </td>
                     </tr>
@@ -53,76 +53,79 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>
+                        <td class="text-blue">
                             Order Number
                         </td>
-                        <td class="text-right">
+                        <td class="text-blue text-right">
                             {{ order.order_number }}
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="text-blue">
                             Full Name
                         </td>
-                        <td class="text-right">
+                        <td class="text-blue text-right">
                             {{ order.full_name }}
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="text-blue">
                             Address 1
                         </td>
-                        <td class="text-right">
+                        <td class="text-blue text-right">
                             {{ order.street_address1 }}
                         </td>
                     </tr>
                     {% if order.street_address2 %}
-                    <td>
+                    <td class="text-blue">
                         Address 2
                     </td>
-                    <td class="text-right">
+                    <td class="text-blue text-right">
                         {{ order.street_address2 }}
                     </td>
                     {% endif %}
+                    {% if order.county %}
                     <tr>
-                        <td>
+                        <td class="text-blue">
                             County
                         </td>
-                        <td class="text-right">
-                            {
+                        <td class="text-blue text-right">
                             {{ order.county }}
                         </td>
                     </tr>
+                     {% endif %}                    
                     <tr>
-                        <td>
+                        <td class="text-blue">
                             Town or City
                         </td>
-                        <td class="text-right">
+                        <td class="text-blue text-right">
                             {{ order.town_or_city }}
                         </td>
                     </tr>
+                    {% if order.postcode %}
                     <tr>
-                        <td>
+                        <td class="text-blue">
                             Postal Code
 
                         </td>
-                        <td class="text-right">
+                        <td class="text-blue text-right">
                             {{ order.postcode }}
                         </td>
                     </tr>
+                    {% endif %}
                     <tr>
-                        <td>
+                        <td class="text-blue">
                             Country
                         </td>
-                        <td class="text-right">
+                        <td class="text-blue text-right">
                             {{ order.country }}
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="text-blue">
                             Phone Number
                         </td>
-                        <td class="text-right">
+                        <td class="text-blue text-right">
                             {{ order.phone_number }}
                         </td>
                     </tr>
@@ -135,26 +138,26 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>
+                        <td class="text-blue">
                             Order Total
                         </td>
-                        <td class="text-right">
+                        <td class="text-blue text-right">
                             £{{ order.order_total }}
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="text-blue">
                             Delivery
                         </td>
-                        <td class="text-right">
+                        <td class="text-blue text-right">
                             £{{ order.delivery_cost }}
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="text-blue">
                             Grand Total
                         </td>
-                        <td class="text-right">
+                        <td class="text-blue text-right">
                             £{{ order.grand_total }}
                         </td>
                     </tr>
