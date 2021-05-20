@@ -36,6 +36,16 @@
     border: 1px solid blue;
 }
 
+select,
+select option {
+    color: blue;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
+}
+
 /* Loading overlay */
 
 #loading-overlay {
