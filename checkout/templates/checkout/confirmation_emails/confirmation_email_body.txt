@@ -1,0 +1,36 @@
+{{ order.full_name }},
+
+Thank you for ordering from us at Jif's Cider. It'll be with you shortly.
+
+Please review your order below.
+
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+Contact Number: {{ order.phone_number }}
+
+{% for item in order.lineitems.all %}
+
+{{ item.product.name }} x {{ item.quantity }}
+
+{% endfor %}
+
+Order Total: £{{ order.order_total }}
+Delivery: £{{ order.delivery_cost }}
+Grand Total: £{{ order.grand_total }}
+
+Delivery Address:
+{{ order.street_address1 }}
+{{ order.town_or_city }}
+{{ order.country }}
+
+
+If you have any questions, feel free to contact us at {{ contact_email }}.
+
+We hope to see you again soon!
+
+
+
+Jif's Craft Cider
+
+
