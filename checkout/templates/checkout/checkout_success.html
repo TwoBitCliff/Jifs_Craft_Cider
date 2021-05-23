@@ -93,7 +93,7 @@
                             {{ order.county }}
                         </td>
                     </tr>
-                     {% endif %}                    
+                    {% endif %}
                     <tr>
                         <td class="text-blue">
                             Town or City
@@ -176,12 +176,21 @@
     </div>
     <div class="row">
         <div class="col-12 col-lg-7 text-right">
+            {% if from_profile %}
+            <a href="{% url 'profile' %}" class="btn btn-blue rounded-0 my-2">
+                <span class="icon mr-2">
+                    <i class="fas fa-angle-left"></i>
+                </span>
+                <span class="text-uppercase">My Profile</span>
+            </a>
+            {% else %}
             <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="btn btn-blue rounded-0 my-2">
                 <span class="icon mr-2">
                     <i class="fas fa-wine-bottle"></i>
                 </span>
                 <span class="text-uppercase">Why not check out our latest offers?</span>
             </a>
+            {% endif %}
         </div>
     </div>
 </div>
