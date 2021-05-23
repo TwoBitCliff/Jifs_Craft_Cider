@@ -41,6 +41,7 @@
                         <tr>
                             <th>Date</th>
                             <th>Items</th>
+                            <th>Quantity</th>
                             <th>Order Total</th>
                             <th>Order Number</th>
                         </tr>
@@ -54,7 +55,16 @@
                                 <ul class="list-unstyled">
                                     {% for item in order.lineitems.all %}
                                     <li class="small">
-                                        {{ item.product.name }} x {{ item.quantity }}
+                                        {{ item.product.name }}
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </td>
+                            <td>
+                                <ul class="list-unstyled">
+                                    {% for item in order.lineitems.all %}
+                                    <li class="small">
+                                        {{ item.quantity }}
                                     </li>
                                     {% endfor %}
                                 </ul>
