@@ -116,8 +116,8 @@ LOGIN_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'jifs_craft_cider.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+Database
+https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
     'default': {
