@@ -1,1 +1,1 @@
-web: gunicorn jifs-craft-cider.wsgi:application
+web: gunicorn boutique_ado.wsgi:application
