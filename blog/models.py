@@ -1,4 +1,5 @@
 from django.db import models
+from profiles.models import UserProfile
 
 
 # https://djangocentral.com/building-a-blog-application-with-django/

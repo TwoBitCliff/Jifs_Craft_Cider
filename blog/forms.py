@@ -9,3 +9,4 @@ class NewPostForm(forms.ModelForm):
         model = Post
         fields = ('image', 'title', 'content')
 
+        
