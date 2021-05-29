@@ -25,7 +25,7 @@ class Product(models.Model):
     product_id = models.CharField(max_length=254, null=True, blank=True)    
     brand = models.CharField(max_length=254)
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
-    quantity = models.CharField(max_length=254) 
+    quantity = models.CharField(max_length=254)
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     
