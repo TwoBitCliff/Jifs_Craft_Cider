@@ -134,6 +134,13 @@ body {
     right: 36px;
 }
 
+
+.card-img-top {
+    width: auto;
+    height: 20vw;
+    object-fit: cover; 
+    
+}
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
     border-bottom-color: #007bff !important;
