@@ -84,7 +84,8 @@ def add_product(request):
             messages.success(request, 'Product added')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Ensure all information is correct.')
+            messages.error(request,
+             'Failed to add product. Ensure all information is correct.')
     else:
         form = ProductForm()
 
@@ -111,7 +112,8 @@ def edit_product(request, product_id):
             messages.success(request, 'Product updated')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Ensure all information is correct.')
+            messages.error(request,
+                'Failed to update product. Ensure all information is correct.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
