@@ -4,7 +4,7 @@ from products.models import Product
 
 def wishlist_contents(request):
 
-    wishlist_items = []   
+    wishlist_items = []
     product_count = 0
     wishlist = request.session.get('wishlist', {})
 
