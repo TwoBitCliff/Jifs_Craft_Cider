@@ -35,7 +35,7 @@
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <!-- Stripe payment -->
-     <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
 
     {% block extra_js %}
@@ -83,6 +83,7 @@
                             <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                             {% endif %}
                             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                            <a href="{% url 'refunds' %}" class="dropdown-item">Refunds</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
                             <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
@@ -91,11 +92,10 @@
                         </div>
                     </li>
                     <li class="list-inline-item">
-                        <a class="text-info text-blue font-weight-bold nav-link"
-                            href="{% url 'view_wishlist' %}">
+                        <a class="text-info text-blue font-weight-bold nav-link" href="{% url 'view_wishlist' %}">
                             <div class="text-center">
-                                <div><i class="fas fa-save fa-lg"></i></div> 
-                                <p class="my-0">Wishlist</p>                               
+                                <div><i class="fas fa-save fa-lg"></i></div>
+                                <p class="my-0">Wishlist</p>
                             </div>
                         </a>
                     </li>
@@ -138,19 +138,19 @@
 
     {% if messages %}
     <div class="message-container">
-         {% for message in messages %}
-                {% with message.level as level %}
-                    {% if level == 40 %}
-                        {% include 'includes/toasts/toast_error.html' %}
-                    {% elif level == 30 %}
-                        {% include 'includes/toasts/toast_warning.html' %}
-                    {% elif level == 25 %}
-                        {% include 'includes/toasts/toast_success.html' %}
-                    {% else %}
-                        {% include 'includes/toasts/toast_info.html' %}
-                    {% endif %}
-                {% endwith %}
-            {% endfor %}
+        {% for message in messages %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/toasts/toast_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/toasts/toast_success.html' %}
+        {% else %}
+        {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+        {% endwith %}
+        {% endfor %}
     </div>
     {% endif %}
 
@@ -161,7 +161,7 @@
     {% endblock %}
 
     {% block postloadjs %}
-     <script type="text/javascript">
+    <script type="text/javascript">
         $('.toast').toast('show');
     </script>
     {% endblock %}
