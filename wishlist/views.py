@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404, HttpResponse
 from products.models import Product
 from django.contrib import messages
 # Create your views here.
@@ -26,3 +26,21 @@ def add_to_wishlist(request, item_id):
 
     request.session['wishlist'] = wishlist
     return redirect(redirect_url)
+
+
+def remove_from_wishlist(request, item_id):
+    """Remove the item from the wishlist"""
+
+    try:
+        product = get_object_or_404(Product, pk=item_id)
+        wishlist = request.session.get('wishlist', {})
+
+        wishlist.pop(item_id)
+        messages.success(request, f'{product.name} removed.')
+
+        request.session['wishlist'] = wishlist
+        return HttpResponse(status=200)
+
+    except Exception as e:
+        messages.error(request, f'Error removing item: (e)')
+        return HttpResponse(status=500)
