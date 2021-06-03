@@ -45,15 +45,7 @@
 </head>
 
 <body>
-    <!-- Place Directly Under the Opening "body" Tag -->
-    <div class="" id="preloader">
-        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, deleniti.</blockquote>
-    </div>
-    <script type="text/javascript">
-        // Adds a "loading" Class to the Preloader
-        document.getElementById('preloader').className += 'loading';
-    </script>
-    <p>Draft Text</p>
+    
     <header class="container-fluid fixed-top">
         <div class="row bg-white pt-lg-2 d-none d-lg-flex" id="topnav">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
@@ -177,34 +169,6 @@
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
-    </script>
-
-<!-- https://jsfiddle.net/erlenmasson/24pEZ/ -->
-    <script type="text/javascript">
-        // Create Quotes Array
-        var quotes = [];
-
-        // The List of Quotes!
-        quotes[0] =
-            "'The heat of autumn is different from the heat of summer. One ripens apples, the other turns them to cider.' - Jane Hirshfield";
-        quotes[1] = "'The older I get, the more I become an apple pie, sparkling cider kind of guy.' - Scott Foley";
-        quotes[2] = "'Everybody thinks I drink beer but I actually like cider!' - Prince William";
-        quotes[3] = "'The tarter the apple, the tastier the cider. - Beverly Lewis'";
-        quotes[4] = "Don't forget to check out our special offers";
-
-        // Assign the Variable "quote" with a Random Quotation from Above
-
-        var quote = quotes[Math.floor(Math.random() * quotes.length)];
-
-        // Alter the Current (Default) Quote Text with a Random Quote
-        $('#preloader blockquote').text(quote);
-
-        // All Code Inside Here Will Get Executed After 5 Seconds
-        setTimeout(function () {
-            $('#preloader').fadeOut(2500, function () {
-                $('#preloader').removeClass('loading');
-            });
-        }, 4500);
     </script>
     {% endblock %}
 
