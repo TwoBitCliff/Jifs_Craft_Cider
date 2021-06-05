@@ -18,14 +18,15 @@ As per the standard of Responsive Design, this site is responsive across several
 
 * Checkout
 1. As a user, I want to add items to a shopping cart.
-1. As a user, I want to  easily enter my billing/ delivery information
-1. As a user, I want to be kept up to date of the total of the shopping cart
+1. As a user, I want to  easily enter my delivery and card information.
+1. As a user, I want to be kept up to date of the total of the shopping cart.
 
 
 * Products
-1. As a user, I want to see a wide variety of products for sale
+1. As a user, I want to see a wide variety of products for sale.
 1. As a user, I want to see price, information and the rating of each product.
 1. As a user, I want to browse products by category.
+1. As a user, I want to be able to search for specific products.
 
 ### Design
 
@@ -37,6 +38,9 @@ As per the standard of Responsive Design, this site is responsive across several
 * Imagery
     * The background image was sourced from Pixabay.
     * Product images were sourced from google images, and the image url is saved with each product.
+
+* Wireframes
+    * wireframes can be found here: https://github.com/TwoBitCliff/Jifs_Craft_Cider/tree/master/readmefiles/wireframes
 
 ## Features
 
@@ -53,6 +57,12 @@ As per the standard of Responsive Design, this site is responsive across several
     * Super users aer able to acces the admin, as well as add, edit and delete products.
 
 ### Features left to implement
+
+* In the future, the author would like to implement reviews for each product, displaying them in the product info page.
+* The ability for the user to search by brand.
+* Balance the amount of products in each category.
+
+## Technologies Used
 
 ### Languages Used
 
@@ -79,6 +89,59 @@ As per the standard of Responsive Design, this site is responsive across several
     - Allows for template functionality, working alongside Python code and performing various functions to ensure the User only sees what they need to. 
 1. [AWS](https://aws.amazon.com/)
     - Allows for the storage of static files.
+1. [Django](https://en.wikipedia.org/wiki/Django_(web_framework))
+    - Allows for the streamline building of the site.
+
+## Testing 
+
+* Profile
+1. As a user, I want to be able to create an account, and easily log in.
+    1. The user may browse the site and make purchases while not logged in. However they have the ability to register and log into an account through easily found navigation links.
+1. As a user, I want to be able to save my delivery information.
+    1. Whilst making an order, the user has the option to save their default delivery details.
+    2. The user is also able to update this information any time on the profile page.
+1. As a user, I want to be able to request refunds.
+    
+
+* Checkout
+1. As a user, I want to add items to a shopping cart.
+    1. The user can specify a quantity, and add that amount to their bag using each products product information page.
+1. As a user, I want to  easily enter my delivery and card information.
+    1. On the checkout page, the user must input delivery information to complete an order.
+    2. All necessary fields are required, an a pop up shows the user of any incorrect/ missing fields.
+    3. Card information is seperated at the bottom, with clear placeholders as to what information is required.
+1. As a user, I want to be kept up to date of the total of the shopping cart.
+    1. Each time a user updates the shopping bag, the total is automatically updated.
+
+
+* Products
+1. As a user, I want to see a wide variety of products for sale.
+    1. There are a range of products under different product categories.
+    2. There is an imbalance in the quantity of different categories. 
+1. As a user, I want to see price, information and the rating of each product.
+    1. The price of each product is prominent for each product, in bold and directly under the image.
+    2. The category and rating can be seen on the main products page. 
+    3. The user can select each product to see further product details, such as brand and quantity (in ml).
+1. As a user, I want to browse products by category.
+    1. Products are seperated by category.
+    2. Navigation options are given for each category.
+1. As a user, I want to be able to search for specific products.
+    1. Each product is searchable by their product name.
+    2. The user is undable to search by brand.
+
+### Achieved Testing
+
+* The project has been viewed across multiple device and screen sizes to ensure it remained responsive. This was achieved by using inspect element, as well as my personal devices.
+
+* Tested creating multiple accounts and creating, updating and deleting data.
+
+* Checked all links across all pages lead to the relevant pages.
+
+* All external links open a new tab using the _blank attribute.
+
+* Each form was tested multiple times in different browsers to ensure each one submitted and saved the data to the right locations.
+
+* The checkout app was tested using stripes test card numbers.
 
 ## Deployment
 
@@ -138,11 +201,15 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Content
 
-All content has been written or created by the author.
+1. The dataset for the products was sourced from https://www.kaggle.com/ and then amended to fit the projects needs.
+
+1. The blog post was inspired and adapted from this guide: https://djangocentral.com/building-a-blog-application-with-django/
+
+1. For help with the refund form, this guide was used: https://www.youtube.com/watch?v=PJkV76KTZqk
 
 ### Media
 
-1. The background image was sourced from pixabay.
+1. The background image was sourced here: https://www.pexels.com/photo/wood-people-alcohol-drink-5537790/
 
 1. The product images were sourced from google images, and the url's are saved to each product.
 
