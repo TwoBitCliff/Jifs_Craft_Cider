@@ -12,7 +12,7 @@ class ProductAdmin(admin.ModelAdmin):
         'price',
         'quantity',
         'image',
-        'rating',       
+        'rating',
     )
 
     ordering = ('product_id',)
