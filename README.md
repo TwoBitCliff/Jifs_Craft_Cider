@@ -101,6 +101,10 @@ As per the standard of Responsive Design, this site is responsive across several
     1. Whilst making an order, the user has the option to save their default delivery details.
     2. The user is also able to update this information any time on the profile page.
 1. As a user, I want to be able to request refunds.
+    1. The user can request a refund by stating the first 5 digits of the order number, aswell as other identifying information.
+    2. Originally the intent was for the user to be able to select from a dropdown of their order history.
+    3. It was also intended to attach the user profile to the refund request.
+    4. This were ommitted due to time constraints. In future, the way around this may be to edit the order model to include a refund status, and then let users request a refund directly from the order history.
     
 
 * Checkout
