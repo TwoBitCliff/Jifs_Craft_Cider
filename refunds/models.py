@@ -1,5 +1,4 @@
 from django.db import models
-from checkout.models import Order
 
 # Create your models here.
 
