@@ -9,8 +9,8 @@ STATUS = (
 
 
 class Refund(models.Model):
-    order_number = models.CharField(max_length=5, null=False, blank=False,
-                                    default='00000')
+    order_number = models.CharField(max_length=5, null=True, blank=False,
+                                    )
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
     reason = models.TextField(null=False, blank=False)
