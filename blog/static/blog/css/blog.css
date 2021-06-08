@@ -1,8 +1,8 @@
 /* Horizontal card layout found here: https://stackoverflow.com/questions/49141874/bootstrap-4-card-panel-with-image-left-of-header-and-title */
 
 .card-horizontal {
-  display: flex;
-  flex: 1 1 auto;
+    display: flex;
+    flex: 1 1 auto;
 }
 
 .card {

@@ -1,6 +1,5 @@
-  
 #profile-update-form .form-control {
-    color: #06038D;
+    color: #06038d;
 }
 
 #profile-update-form input::placeholder {
@@ -9,14 +8,14 @@
 
 #id_default_country,
 #id_default_country option:not(:first-child) {
-    color: #06038D;
+    color: #06038d;
 }
 
 #id_default_country option:first-child {
     color: #aab7c4;
 }
 
-.order-history{
+.order-history {
     max-height: 416px;
     overflow-y: auto;
 }
