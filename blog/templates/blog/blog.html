@@ -1,62 +1,52 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
 {% endblock %}
-
 {% block page_header %}
 <div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
+   <div class="row">
+      <div class="col"></div>
+   </div>
 </div>
 {% endblock %}
-
 {% block content %}
 <div class="overlay"></div>
 <div class="container">
-    <div class="row">
-        <div class="col">
-            <hr>
-            <h2 class="logo-font mb-4">Blog</h2>
-            <h6 class="logo-font mb-4">Review your orders, share your stories and reccomend new ciders</h6>
-            <hr>
-        </div>
-    </div>
-    {% for post in posts %}
+   <div class="row">
+      <div class="col">
+         <hr>
+         <h2 class="logo-font mb-4">Blog</h2>
+         <h6 class="logo-font mb-4">Review your orders, share your stories and reccomend new ciders</h6>
+         <hr>
+      </div>
+   </div>
+   {% for post in posts %}
    <div class="card">
-    <div class="card-horizontal">
-        {% if product.image %}
-        <div class="img-square-wrapper">
+      <div class="card-horizontal">
+         {% if product.image %}
+         <div class="img-square-wrapper">
             <img class="card-img-top" src="{{ post.image }}" alt="{{ post.title }}">
-        </div>
-        {% else %}
-        <div class="img-square-wrapper">
+         </div>
+         {% else %}
+         <div class="img-square-wrapper">
             <img class="card-img-left" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ product.title }}">
-        </div>
-        {% endif %}        
-        <div class="card-body">
+         </div>
+         {% endif %}        
+         <div class="card-body">
             <h5 class="card-title">{{ post.title }}</h5>
             <h6 class="card-subtitle mb-2 text-muted">{{ post.user_profile }}</h6>
             <p class="card-text">{{ post.content }}</p>
-        </div>
-    </div>
-    <div class="card-footer">
-        <small class="text-muted">{{ post.created_on }}</small>
-    </div>
+         </div>
+      </div>
+      <div class="card-footer">
+         <small class="text-muted">{{ post.created_on }}</small>
+      </div>
+   </div>
+   {% endfor %}
+   {% if request.user.is_authenticated %}
+   <a href="{% url 'CreateNewPost' %}" class="btn btn-blue rounded-0 text-uppercase float-right">New Post</a>
+   {% else %}
+   {% endif %}
 </div>
-    {% endfor %}
-    {% if request.user.is_authenticated %}
-    <a href="{% url 'CreateNewPost' %}" class="btn btn-blue rounded-0 text-uppercase float-right">New Post</a>
-    {% else %}
-    {% endif %}
-
-</div>
-
 {% endblock %}
-
-<!-- {% block postloadjs %}
-    {{ block.super }}
-    <script type="text/javascript" src="{% static 'profiles/js/countryfields.js' %}"></script>
-    {% endblock %} -->
