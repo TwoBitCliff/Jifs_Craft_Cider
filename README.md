@@ -133,9 +133,15 @@ As per the standard of Responsive Design, this site is responsive across several
     1. Each product is searchable by their product name.
     2. The user is undable to search by brand.
 
+
+* Other
+1. When adding the wishlist link to the mobile view, it would duplicate on large screen displays, next to the 
+products link. The link was removed from the mobile view for the sake of visual effect, however this means the 
+wishlist is inaccessable from mobile devices.
 ### Achieved Testing
 
-* The project has been viewed across multiple device and screen sizes to ensure it remained responsive. This was achieved by using inspect element, as well as my personal devices.
+* The project has been viewed across multiple device and screen sizes to ensure it remained responsive. This was 
+achieved by using inspect element, as well as my personal devices.
 
 * Tested creating multiple accounts and creating, updating and deleting data.
 
