@@ -44,17 +44,6 @@
         {% endif %}
     </div>
 </li>
-{% if request.user.is_authenticated %}
-<li class="list-inline-item">
-    <a class="text-info text-blue font-weight-bold nav-link" href="{% url 'view_wishlist' %}">
-        <div class="text-center">
-            <div><i class="fas fa-save fa-lg"></i></div>
-            <p class="my-0">Wishlist</p>
-        </div>
-    </a>
-</li>
-{% else %}
-{% endif %}
 <li class="list-inline-item">
     <a class="text-info font-weight-bold nav-link" href="{% url 'view_wishlist' %}">
         <div class="text-center">
