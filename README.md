@@ -211,6 +211,10 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 1. For help with the refund form, this guide was used: https://www.youtube.com/watch?v=PJkV76KTZqk
 
+1. For help with the overlays, this site was used: https://jsfiddle.net/erlenmasson/24pEZ/
+
+1. For formatting the code, this site was used: https://webformatter.com/
+
 ### Media
 
 1. The background image was sourced here: https://www.pexels.com/photo/wood-people-alcohol-drink-5537790/
