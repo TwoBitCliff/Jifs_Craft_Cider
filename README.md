@@ -219,6 +219,8 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Content
 
+1. The project was inspired and adapted from the boutique ado project.
+
 1. The dataset for the products was sourced from https://www.kaggle.com/ and then amended to fit the projects needs.
 
 1. The blog post was inspired and adapted from this guide: https://djangocentral.com/building-a-blog-application-with-django/
