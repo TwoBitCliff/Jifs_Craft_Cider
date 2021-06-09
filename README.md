@@ -4,9 +4,15 @@
 
 This is the fourth Milestone Project for the Code Institute's Full Stack Developer course.
 
-In this project, I have utitlised skills learnt so far on the course, including HTML, CSS, JavaScript and Python, as well as incorportating Django, Stripe and other packages to create a Eccomerce site, specialising in cider. It allows the user to create a profile, shop for products, save them for later, and request refunds.
+In this project, I have utitlised skills learnt so far on the course, including HTML, CSS, 
+JavaScript and Python, as well as incorportating Django, Stripe and other packages to create
+ a Eccomerce site, specialising in cider. It allows the user to create a profile, shop for products,
+  save them for later, and request refunds.
 
-As per the standard of Responsive Design, this site is responsive across several devices, making sure to be structured in a cohesive manner and change designs when appropriate. To  achieve this, the site utilises Bootstrap, aiding its design and performance to shape a site that functions across several sized devices.
+As per the standard of Responsive Design, this site is responsive across several devices,
+ making sure to be structured in a cohesive manner and change designs when appropriate.
+ To  achieve this, the site utilises Bootstrap, aiding its design and performance to shape
+  a site that functions across several sized devices.
 
 ## UX
 
@@ -61,6 +67,7 @@ As per the standard of Responsive Design, this site is responsive across several
 * In the future, the author would like to implement reviews for each product, displaying them in the product info page.
 * The ability for the user to search by brand.
 * Balance the amount of products in each category.
+* Link Order history to refunds.
 
 ## Technologies Used
 
@@ -138,6 +145,7 @@ As per the standard of Responsive Design, this site is responsive across several
 1. When adding the wishlist link to the mobile view, it would duplicate on large screen displays, next to the 
 products link. The link was removed from the mobile view for the sake of visual effect, however this means the 
 wishlist is inaccessable from mobile devices.
+
 ### Achieved Testing
 
 * The project has been viewed across multiple device and screen sizes to ensure it remained responsive. This was 
@@ -227,11 +235,11 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 1. The product images were sourced from google images, and the url's are saved to each product.
 
-1. All images belong to their respective ownsers
+1. All images belong to their respective owners
 
 ### Acknowledgements
 
 * Thanks to my girlfriend, parents and other friends for their ideas, support and for reviewing the project at various stages.
 * Thanks to my Code Institute Tutor, Mentor and Student Support team for offering me advice and support
-during the creation of this project.
+ during the creation of this project.
 * Thanks to the contributors at both Slack and Stack Overflow for help at different stages of the project.
